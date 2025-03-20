@@ -1,0 +1,7 @@
+.clickable-button {
+    transform: scale(1);
+}
+
+.clickable-button:active {
+    transform: scale(0.95);
+}
