@@ -1,7 +1,30 @@
-.clickable-button {
-    transform: scale(1);
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
-.clickable-button:active {
+h1, h2 {
+    color: #007bff;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+button:active {
     transform: scale(0.95);
 }
