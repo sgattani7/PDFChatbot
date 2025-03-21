@@ -1,20 +1,40 @@
-*SETUP*
+# **SETUP**  
 
-INSTALLATIONS
-1. Install Docker on you system
-2. Install Ollama on you system 
+## INSTALLATIONS  
+1. Install Docker on your system  
+2. Install Ollama on your system  
 
-OLLAMA SETUP
-3. On your systems terminal start the Ollama server using "Ollama serve".
-4. On a new terminal use the command 'Ollama list"; this shows the models that are up and running. This will be epty initially.
-5. Run the command "ollama pull llama3" to pull the model.
-6. Run the command "ollama pull nomic-embed-text" to pull the model
-7. After steps 5 and 6 running "ollama list" should show you these two modles as up running.
+## OLLAMA SETUP  
+3. On your system's terminal, start the Ollama server using:  
+   ```sh
+   ollama serve
 
-APPLICATION SETUP
-8. Open the repository on your IDE and cd into it 
-9. run the command "docker-compose up --build"  this will install all the dependencies and will run the server on localhost:3000
-(please note that this can take a few minutes when run for the first time since it installs all the dependencies of you Python and react project)
+4. Open a new terminal and run:
+   ```sh
+   ollama list
+This shows the models that are up and running. This will be empty initially.
 
-10. Enjoy the application on localhost:3000 on your browser :)
+5. Pull the LLaMA3 model using:
+	```sh
+   ollama pull llama3
+6. Pull the nomic-embed-text model using:
+	```sh
+   ollama pull nomic-embed-text
+
+7. After steps 5 and 6, runing:
+   ```sh
+   ollama list
+  should show these two models as up and running.
+
+
+## APPLICATION SETUP  
+8. Open the repository in your IDE and navigate into it
+9. Run the following command to install dependencies and start the server:
+    ```sh
+   docker-compose up --build
+
+10. Enjoy the application on localhost:3000 in your browser! 🚀
+
+
+
 
